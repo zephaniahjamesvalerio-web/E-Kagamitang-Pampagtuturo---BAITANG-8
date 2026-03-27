@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Kagamitang Pampagtuturo</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* NAVBAR */
+nav {
+    background: #2c3e50;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+/* SECTIONS */
+section {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+/* CARDS */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #ecf0f1;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* BUTTON */
+button {
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* FOOTER */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#lessons">Lessons</a>
+    <a href="#animation">Animation</a>
+</nav>
+
+<!-- HEADER -->
+<header id="home">
+    <h1>E-Kagamitang Pampagtuturo</h1>
+    <p>Baitang 8 - Filipino</p>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>Tungkol sa Proyekto</h2>
+    <p>
+        Ang website na ito ay ginawa bilang e-kagamitang pampagtuturo
+        upang gawing mas interaktibo at mas madaling maunawaan ang mga aralin.
+    </p>
+</section>
+
+<!-- LESSONS -->
+<section id="lessons">
+    <h2>Mga Aralin</h2>
+
+    <div class="container">
+        <div class="card">
+            <h3>Tula</h3>
+            <p>Pag-aaral ng iba't ibang uri ng tula.</p>
+        </div>
+
+        <div class="card">
+            <h3>Maikling Kwento</h3>
+            <p>Pagsusuri at pag-unawa sa kwento.</p>
+        </div>
+
+        <div class="card">
+            <h3>Dula</h3>
+            <p>Pagkilala sa elemento ng dula.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ANIMATION -->
+<section id="animation">
+    <h2>2D Animation</h2>
+    <p>Sample animation para sa pagtuturo:</p>
+
+    <button onclick="playAnimation()">Play Animation</button>
+
+    <p id="animationText"></p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 E-Kagamitang Pampagtuturo</p>
+</footer>
+
+<script>
+function playAnimation() {
+    document.getElementById("animationText").innerHTML =
+    "🌸 Ang bulaklak ay sumayaw sa hangin... (Sample Animation Text)";
+}
+</script>
+
+</body>
+</html>
